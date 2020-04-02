@@ -36,7 +36,7 @@ namespace WebApplication1
             services.AddTransient<IUserStore<eUser>, eUserStore>();
             services.AddControllersWithViews();
             services.AddMvc(
-        config => config.ModelBinderProviders.Insert(0, new CustomModelBinderProvider())
+       // config => config.ModelBinderProviders.Insert(0, new CustomModelBinderProvider())
     );
         }
 
